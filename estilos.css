@@ -1,0 +1,160 @@
+/* Incluye el relleno y los bordes dentro del tamaño del elemento. */
+* {
+  box-sizing: border-box;
+}
+
+/* Fondo del navegador */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #e4e9ef;
+  color: #243449;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Fondo principal */
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Encabezado dividido en dos partes */
+header {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #dceee4;
+}
+
+.referencia,
+.presentacion {
+  flex: 1;
+  min-width: 0;
+}
+
+.referencia {
+  padding: 20px;
+  background-color: #bfdcca;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Navegación horizontal */
+nav {
+  display: flex;
+  background-color: #23466c;
+}
+
+nav a {
+  flex: 1;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: #35618f;
+  text-decoration: underline;
+}
+
+/* Aside junto al main */
+.contenido {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  background-color: #e1eafa;
+}
+
+main {
+  flex: 2;
+  min-width: 0;
+}
+
+/* Dos artículos */
+article {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f4fa;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+/* Cuatro tarjetas en una fila */
+.galeria {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fff0df;
+}
+
+.tarjeta {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Pie dividido en dos partes */
+footer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #243449;
+  color: white;
+}
+
+footer div {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header,
+  nav,
+  .contenido,
+  .galeria,
+  footer {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  nav a {
+    text-align: left;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diseño web responsivo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <div class="pagina">
+
+    <header>
+      <div class="presentacion">
+        <h1>Diseño web responsivo</h1>
+        <p>
+          Permite adaptar una página a computadoras,
+          tabletas y teléfonos.
+        </p>
+      </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+      <a href="#responsivo">Diseño responsivo</a>
+      <a href="#viewport">Viewport</a>
+      <a href="#media">Media queries</a>
+      <a href="#flex">Flexbox</a>
+    </nav>
+
+    <div class="contenido">
+      <aside>
+        <h2>Conceptos básicos</h2>
+        <ul>
+          <li>HTML organiza el contenido.</li>
+          <li>CSS define la apariencia.</li>
+          <li>Flexbox distribuye los elementos.</li>
+          <li>Las media queries adaptan el diseño.</li>
+        </ul>
+      </aside>
+
+      <main>
+        <article id="responsivo">
+          <h2>Diseño responsivo</h2>
+          <p>
+            Un diseño responsivo cambia su distribución según
+            el espacio disponible. En una computadora puede
+            mostrar columnas y en un teléfono puede apilarlas.
+          </p>
+
+          <h3 id="viewport">Viewport</h3>
+          <p>
+            Es el área del navegador donde se muestra la página.
+            La etiqueta meta viewport permite ajustar el ancho
+            de diseño al dispositivo.
+          </p>
+        </article>
+
+        <article id="media">
+          <h2>Media queries</h2>
+          <p>
+            Aplican estilos cuando se cumple una condición.
+            En esta página, cuando el ancho es de 768 px o menos,
+            los elementos se colocan uno debajo del otro.
+          </p>
+
+          <h3 id="flex">Flexbox</h3>
+          <p>
+            Se activa con display: flex. La propiedad
+            flex-direction permite organizar los elementos
+            en una fila o en una columna.
+          </p>
+        </article>
+      </main>
+    </div>
+
+    <section class="galeria" aria-label="Ejemplos de dispositivos">
+      <div class="tarjeta">
+        <h3>Computadora</h3>
+        <p>Contenido en columnas.</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tableta</h3>
+        <p>Distribución adaptable.</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Teléfono</h3>
+        <p>Contenido apilado.</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Navegador</h3>
+        <p>El ancho puede cambiar.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h3>Tarea 3</h3>
+        <p>Diseño de Aplicaciones Web</p>
+      </div>
+
+      <div>
+        <h3>Tecnologías utilizadas</h3>
+        <p>HTML y CSS con Flexbox</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
